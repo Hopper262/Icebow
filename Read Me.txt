@@ -1,0 +1,56 @@
+Icebow 1.0
+----------
+Artwork by TychoVII
+Scripting by Hopper
+
+----------------------------------------------------------------
+DESCRIPTION:
+Icebow is a HUD for Marathon 2 and Marathon Infinity that has been heavily inspired by the Halo 1 interface.
+
+Because of the advanced effects used in Icebow, the HUD will not work in the software renderer -- OpenGL is required.
+
+----------------------------------------------------------------
+COMPATIBILITY:
+Marathon Infinity - Compatible
+Marathon 2: Durandal - Compatible
+M1A1 - Not compatible
+
+----------------------------------------------------------------
+REQUIREMENTS:
+- Aleph One release 2009-09-09 or later
+- OpenGL renderer
+
+----------------------------------------------------------------
+INSTALLATION:
+- Drag the downloaded .zip file, or the unzipped "Icebow" folder, into the "Plugins" folder inside your Marathon 2 or Marathon Infinity folders. (Create a "Plugins" folder if you don't already have one.)
+- Launch Aleph One, and go to "Preferences", then "Environment", then "Plugins" and make sure the plugin is listed as "Enabled". You can click on it to turn it on or off. Disable any other HUD plugins you have installed. Disable any other HUD plugins you have installed.
+
+----------------------------------------------------------------
+CUSTOMIZATION:
+While we attempted to make this script function as well as possible across all systems and platforms, not everybody will agree on what is appealing to them visually. Certain aspects of this script have been made easily customizable by opening Icebow.lua in any text editor.
+
+In order to change the aspect ratio (letterbox or full screen), you must edit the following near the top of the Icebow.lua script:
+
+   max_aspect_ratio = 2
+   min_aspect_ratio = 1.6
+
+'2' stands for a 2:1 ratio, which is the aspect ratio used in 'classic HUD' mode. This is the widest aspect ratio allowed by the script.
+'1.6' stands for a 1.6:1 ratio, which is the aspect ratio used by many of Aleph One's built-in screen sizes, like 1024x640. This is the narrowest aspect ratio allowed by the script.
+
+The game will fill the screen if your screen's aspect ratio is between 'max_aspect_ratio' and 'min_aspect ratio'. To determine your screen's ratio, divide the width by the height. For example:
+
+  800x600 aspect ratio = 800 / 600 = 1.33
+
+Since 1.33 is smaller than the minimum of 1.6, black bars will be used. To fill the screen, change 'min_aspect_ratio' to 1.33 or smaller.
+
+----------------------------------------------------------------
+CHANGELOG:
+
+v1.0:
+* First release
+
+----------------------------------------------------------------
+SPECIAL THANKS:
+Bungie - For the obvious reasons
+Tim Larson - For the Squarish Sans font
+Treellama - For putting up with us

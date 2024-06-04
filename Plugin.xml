@@ -1,0 +1,3 @@
+<plugin name="Icebow" version="1.0" description="Halo-style HUD (requires OpenGL)" hud_lua="Icebow.lua">
+</plugin>
+
